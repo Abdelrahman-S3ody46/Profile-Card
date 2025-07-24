@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card UI Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <!-- 🌙 Dark Mode Toggle -->
+  <div class="dark-toggle">
+    <i class='bx bx-moon' id="darkModeBtn"></i>
+  </div>
+
+  <!-- 👤 Profile Card -->
+  <div class="Profile_card">
+    <div class="image">
+      <img src="IMG_20241211_190712_158.jpg" alt="Profile" class="profile-img">
+    </div>
+
+    <div class="text-data">
+     <h2 class="name">Abdelrahman <span style="color:#4070f4">@S3ODY</span></h2>
+     <span class="jop soft-highlight-job">Web Developer & Blogger</span>
+    </div>
+    <div class="about">
+  <p>I'm a junior web developer skilled in HTML, CSS, JavaScript, and Django. Passionate about learning and building real-world projects.</p>
+</div>
+
+
+    <div class="media-bottoms">
+
+ <a href="https://github.com/Abdelrahman-S3ody46" target="_blank" style="background: #171515;" class="link">
+    <i class='bx bxl-github'></i>
+  </a>
+
+        <a href="https://www.facebook.com/share/16wsVU6dfT/" 
+     target="_blank" rel="noopener noreferrer" 
+     style="background: #4267b2;" class="link">
+     <i class='bx bxl-facebook-circle'></i>
+  </a>
+
+  <a href="https://www.linkedin.com/in/abdulrahman-hossam-b1a58b182" 
+     target="_blank" rel="noopener noreferrer" 
+     style="background: #2555bc;" class="link">
+     <i class='bx bxl-linkedin-square'></i>
+  </a>
+
+  <a href="https://www.instagram.com/s3ody.46?igsh=MTFxbTViOHUwcWhqYQ==" 
+     target="_blank" rel="noopener noreferrer" 
+     style="background: #df1a5c;" class="link">
+     <i class='bx bxl-instagram'></i>
+  </a>
+
+  <a href="https://youtube.com/@abdelrahmanhossam46?si=-5sDvroaqD409laI" 
+     target="_blank" rel="noopener noreferrer" 
+     style="background: #ff0000;" class="link">
+     <i class='bx bxl-youtube'></i>
+  </a>
+
+</div>
+
+
+    <div class="buttons">
+      <button class="button">Go Follow Me</button>
+      <a href="https://t.me/s3ody47 " target="_blank" class="button">Message Me</a>
+
+    </div>
+  </div>
+
+  <!-- ✅ Scripts -->
+  <script>
+    const toggle = document.getElementById("darkModeBtn");
+
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggle.classList.toggle("bx-sun");
+      toggle.classList.toggle("bx-moon");
+    });
+
+    // Animation on load
+    window.addEventListener("DOMContentLoaded", () => {
+      const card = document.querySelector(".Profile_card");
+      card.style.opacity = "1";
+    });
+
+  </script>
+
+</body>
+</html>
